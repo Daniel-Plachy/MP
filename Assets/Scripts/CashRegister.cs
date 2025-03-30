@@ -10,6 +10,11 @@ public class CashRegister : MonoBehaviour
         {
             ScanItem();
         }
+        
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            AcceptCustomer();
+        }
     }
 
     void ScanItem()
@@ -23,7 +28,12 @@ public class CashRegister : MonoBehaviour
                 return;
             }
         }
-
         Debug.Log("Žádné zboží k naskenování!");
+    }
+    
+    void AcceptCustomer()
+    {
+        // Přijmutí zákazníka, objednávka přijata (logiku doplníme později)
+        Debug.Log("Zákazník přijat, objednávka přijata!");
     }
 }

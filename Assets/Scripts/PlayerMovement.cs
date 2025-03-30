@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 10f;
+    // jumpPower již není potřeba, ale můžeš ho ponechat, pokud ho budeš využívat jinde
     public float jumpPower = 7f;
     public float gravity = 20f;
     public float lookSpeed = 2f;
@@ -38,20 +39,14 @@ public class PlayerMovement : MonoBehaviour
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
-        {
-            moveDirection.y = jumpPower;
-        }
-        else
-        {
-            moveDirection.y = movementDirectionY;
-        }
+        // Odstraněno skákání – uživatel nemůže skákat.
+        moveDirection.y = movementDirectionY;
 
         if (!characterController.isGrounded)
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
-
+        
         characterController.Move(moveDirection * Time.deltaTime);
 
         if (canMove)
@@ -62,5 +57,4 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
-    
 }
