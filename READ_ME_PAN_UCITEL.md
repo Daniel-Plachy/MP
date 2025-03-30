@@ -7,15 +7,33 @@ Co zde najdete:
               Quit -> vypne hru
 
  Co bych sem chtěl přidat (třeba) do pondělí:
-   - pěněžní systém
-   - rozhraní PC (zde bude moci hráč rozšiřovat a objednávat)
-   - 2D ohraničení mapy, "tunely" (černé oblouky) na koncích silnic -> odtud se budou spawnovat auta
+   - pěněžní systém ✅
+   - rozhraní PC (zde bude moci hráč rozšiřovat a objednávat) ⏳
+   - 2D ohraničení mapy, "tunely" (černé oblouky) na koncích silnic -> odtud se budou spawnovat auta ❌
    - 
 
 Co bych chtěl přidat do konce dalšího týdne:
-  - celý "příběh" (už budu mít peníze ve hře, rozšiřování, kupování nových produktů)
-  - NPC
-  - ukládání
+  - celý "příběh" (už budu mít peníze ve hře, rozšiřování, kupování nových produktů) ⏳
+  - NPC ⏳
+  - ukládání ❌
 
 Úplně ke konci:
   - graficky zkrášlit (můj hlavní cíl je nyní funkčnost)
+
+AKTUALIZACE 30.3.
+Co jsem udělal:
+- pěněžní systém ✅
+- provizorní button na přidávání peněz
+- rozhrani PC ✅ (funkční, ne graficky přívětivé) - ZATÍM JEN PRO PRODUKTY
+- provizorní kostka, která zastupuje PC
+- zakoupení a následné spawnutí do scény nových objektů
+- přidal jsem NPC, navmesh aby chodily z bodu A do bodu B, měl jsem i, že mi měly chodit do obchodu, ale to přestalo fungovat, tak jsem to odstranil, abych mohl pokračovat.
+- HUD pro zobrazenování peněz
+
+Co jsem nezvládl:
+- 2D ohraničení - nemůžu najít vhodný obrázek pro ohraničení, přemýšlím, že tam dám prostě zelenou jako tráva, modrá jako oblaka a pár mraků.
+- ukládání - ještě jsem s ním ani nezačal
+
+Co mám rozpracované:
+- upravoval jsem prefaby košů, kde se nachází nové produkty, takže mi tam teď levitují - opravím, co nejrychleji
+- navmesh pro NPC, aby chodily do obchodu.
