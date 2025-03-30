@@ -710,7 +710,6 @@ MonoBehaviour:
   playerCamera: {fileID: 490859659}
   walkSpeed: 4
   runSpeed: 7
-  jumpPower: 7
   gravity: 20
   lookSpeed: 2
   lookXLimit: 90
@@ -1560,9 +1559,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670fcb7a249c25f49b192ece1660f083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storepointA: {fileID: 0}
-  storepointB: {fileID: 0}
-  storepointWait: {fileID: 0}
+  storepointA: {fileID: 1915930243}
+  storepointB: {fileID: 975947820}
+  storepointWait: {fileID: 281807683}
 --- !u!4 &325084875
 Transform:
   m_ObjectHideFlags: 0
