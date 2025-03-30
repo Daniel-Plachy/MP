@@ -2,9 +2,29 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
-{    void Update()
+{    
+        private bool playerNearby = false;
+    void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if(other.CompareTag("Player"))
+        {
+            playerNearby = true;
+        }
+    }
+
+    // Když hráč opustí trigger
+    void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            playerNearby = false;
+        }
+    }
+
+    void Update()
+    {
+
+        if(playerNearby && Input.GetKeyDown(KeyCode.C))
         {
             SceneManager.LoadScene(2);
         }
