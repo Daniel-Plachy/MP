@@ -28,6 +28,7 @@ Co jsem udělal:
 - provizorní kostka, která zastupuje PC
 - zakoupení a následné spawnutí do scény nových objektů
 - přidal jsem NPC, navmesh aby chodily z bodu A do bodu B, měl jsem i, že mi měly chodit do obchodu, ale to přestalo fungovat, tak jsem to odstranil, abych mohl pokračovat.
+(script tam je, stačí jen přidat počet npc do objektu spawner a uvidíte, kde to blbne)
 - HUD pro zobrazenování peněz
 
 Co jsem nezvládl:
