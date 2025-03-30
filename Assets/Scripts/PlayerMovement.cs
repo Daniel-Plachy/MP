@@ -8,8 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 10f;
-    // jumpPower již není potřeba, ale můžeš ho ponechat, pokud ho budeš využívat jinde
-    public float jumpPower = 7f;
+
     public float gravity = 20f;
     public float lookSpeed = 2f;
     public float lookXLimit = 90f;
@@ -39,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        // Odstraněno skákání – uživatel nemůže skákat.
+
         moveDirection.y = movementDirectionY;
 
         if (!characterController.isGrounded)

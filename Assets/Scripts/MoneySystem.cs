@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MoneySystem : MonoBehaviour
 {
-    // Jednoduchý singleton, aby se dalo volat MoneySystem.instance odkudkoli
+
     public static MoneySystem instance;
 
     [Header("Aktuální stav peněz")]
     [SerializeField] private int gold = 0;
-    public int Gold => gold; // Jen pro čtení zvenku
+    public int Gold => gold;
 
     [Header("Prefaby košů")]
     public GameObject kosHrusekPrefab;
@@ -31,7 +31,7 @@ public class MoneySystem : MonoBehaviour
         { "Rajčata",  100 }
     };
 
-    // Seznam zakoupených produktů (spawn se provede až při návratu do mapy)
+
     public List<string> purchasedItems = new List<string>();
 
     void Awake()
@@ -57,16 +57,14 @@ public class MoneySystem : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    /// <summary>
-    /// Volá se při načtení každé scény.
-    /// Pokud je načtená scéna mapy (index 1), spawnou se zakoupené produkty.
-    /// </summary>
+
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
-    // Pokud je načtena scéna mapy (např. podle jména nebo build indexu)
+
     if (scene.name == "Mapa" || scene.buildIndex == 1)
     {
-        // Najdi spawn pointy podle tagu "KosSpawnPoint"
+
         GameObject[] spawnPointObjects = GameObject.FindGameObjectsWithTag("KosSpawnPoint");
         if (spawnPointObjects.Length > 0)
         {
@@ -83,7 +81,7 @@ public class MoneySystem : MonoBehaviour
             Debug.LogWarning("Spawn pointy nebyly nalezeny! Ujisti se, že objekty mají tag 'KosSpawnPoint'.");
         }
         
-        // Nyní projdi seznam zakoupených produktů a spawnni koše
+
         foreach (string product in purchasedItems)
         {
             SpawnKosByName(product);
@@ -93,20 +91,12 @@ public class MoneySystem : MonoBehaviour
 }
 
 
-    /// <summary>
-    /// Metoda pro přidání peněz (volaná z tlačítka)
-    /// </summary>
     public void AddGold(int amount)
     {
         gold += amount;
         Debug.Log("Přidáno " + amount + " goldů. Aktuální stav: " + gold);
     }
 
-    /// <summary>
-    /// Metoda pro nákup produktu z BuyMenu.
-    /// Místo okamžitého spawnování koše se produkt uloží do seznamu purchasedItems,
-    /// a koš se spawnuje až při návratu do mapy.
-    /// </summary>
     public void BuyProduct(string productName)
     {
         if (productPrices.ContainsKey(productName))
@@ -129,9 +119,6 @@ public class MoneySystem : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Spawnování koše podle názvu produktu – zavolá se při načtení scény mapy.
-    /// </summary>
     public void SpawnKosByName(string productName)
     {
         switch (productName)
@@ -153,10 +140,6 @@ public class MoneySystem : MonoBehaviour
                 break;
         }
     }
-
-    /// <summary>
-    /// Vnitřní metoda pro instanci koše na volném místě (kos2, kos3, kos4).
-    /// </summary>
     private void SpawnKos(GameObject kosPrefab)
     {
         if (kosPrefab == null)

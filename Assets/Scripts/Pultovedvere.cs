@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Pultovedvere : MonoBehaviour
 {
-    public float uhelOtevreni = 90f; // Úhel otevření dveří
-    public float rychlostOtevirani = 2f; // Rychlost otevírání dveří
+    public float uhelOtevreni = 90f; 
+    public float rychlostOtevirani = 2f; 
 
     private bool playerDetected = false;
     private bool dvereOtevrene = false;
@@ -25,7 +25,7 @@ public class Pultovedvere : MonoBehaviour
             aktualniUhel = Mathf.Lerp(aktualniUhel, 0f, Time.deltaTime * rychlostOtevirani);
         }
 
-        transform.localRotation = Quaternion.Euler(0f, 0f, aktualniUhel); // Rotace kolem osy Y
+        transform.localRotation = Quaternion.Euler(0f, 0f, aktualniUhel); 
     }
 
     private void OnTriggerEnter(Collider other)

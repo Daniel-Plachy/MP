@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PickUpObject : MonoBehaviour
 {
-    public Transform holdPoint; // Místo, kam se objekt "přichytí", např. před hráče
-    public float pickUpRange = 2f; // Jak daleko můžeš objekt sebrat
-    public float placeDistance = 2f; // Maximální vzdálenost položení
+    public Transform holdPoint;
+    public float pickUpRange = 2f; 
+    public float placeDistance = 2f;
     private GameObject heldObject;
     private Collider detectedObject;
 
@@ -46,7 +46,7 @@ public class PickUpObject : MonoBehaviour
         Rigidbody rb = obj.GetComponent<Rigidbody>();
         if (rb)
         {
-            rb.isKinematic = true; // Zamezí fyzice
+            rb.isKinematic = true; 
         }
         obj.transform.SetParent(holdPoint);
         obj.transform.localPosition = Vector3.zero;
@@ -56,11 +56,11 @@ public class PickUpObject : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, placeDistance))
         {
-            heldObject.transform.position = hit.point; // Položení na místo
+            heldObject.transform.position = hit.point; 
         }
         else
         {
-            heldObject.transform.position = transform.position + transform.forward * placeDistance; // Položí před hráče
+            heldObject.transform.position = transform.position + transform.forward * placeDistance; 
         }
 
         heldObject.transform.SetParent(null);

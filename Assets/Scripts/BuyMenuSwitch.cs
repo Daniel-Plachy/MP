@@ -12,7 +12,7 @@ public class SceneSwitcher : MonoBehaviour
         }
     }
 
-    // Když hráč opustí trigger
+
     void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))

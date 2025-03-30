@@ -4,7 +4,7 @@ public class MoneyButton : MonoBehaviour
 {
     private bool playerNearby = false;
 
-    // Když hráč vstoupí do triggeru
+
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -13,7 +13,7 @@ public class MoneyButton : MonoBehaviour
         }
     }
 
-    // Když hráč opustí trigger
+
     void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -24,7 +24,7 @@ public class MoneyButton : MonoBehaviour
 
     void Update()
     {
-        // Pokud je hráč v blízkosti a stiskne E, přidá 50 goldů
+ 
         if(playerNearby && Input.GetKeyDown(KeyCode.E))
         {
             MoneySystem.instance.AddGold(50);

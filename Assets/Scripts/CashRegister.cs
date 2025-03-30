@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CashRegister : MonoBehaviour
 {
-    public float scanRange = 2f; // Maximální vzdálenost skenování
+    public float scanRange = 2f; 
 
     void Update()
     {
@@ -22,7 +22,7 @@ public class CashRegister : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, scanRange);
         foreach (Collider col in colliders)
         {
-            if (col.CompareTag("PickUp") && col.transform.parent != null) // Musí být držen hráčem
+            if (col.CompareTag("PickUp") && col.transform.parent != null) 
             {
                 Debug.Log("Položka naskenována!");
                 return;
@@ -33,7 +33,7 @@ public class CashRegister : MonoBehaviour
     
     void AcceptCustomer()
     {
-        // Přijmutí zákazníka, objednávka přijata (logiku doplníme později)
+
         Debug.Log("Zákazník přijat, objednávka přijata!");
     }
 }

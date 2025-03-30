@@ -26,7 +26,6 @@ public class MainMenu : MonoBehaviour
     public void LoadGame()
     {
         Debug.Log("Načítání hry...");
-        // Doplň kód pro načtení uložené hry
     }
 
     public void BackToMainMenu()

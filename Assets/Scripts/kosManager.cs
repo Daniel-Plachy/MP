@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class KosManager : MonoBehaviour
 {
-    public GameObject bramboryPrefab;     // Prefab pro brambory
-    public GameObject jablkaPrefab;       // Prefab pro jablka
+    public GameObject bramboryPrefab;     
+    public GameObject jablkaPrefab;       
 
-    public Transform spawnPointBrambory;  // Místo pro spawn brambor
-    public Transform spawnPointJablka;    // Místo pro spawn jablek
+    public Transform spawnPointBrambory;  
+    public Transform spawnPointJablka;    
 
     void Start()
     {
