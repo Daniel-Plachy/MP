@@ -17,8 +17,7 @@ public class SaveLoadMenu : MonoBehaviour
             infoText.text =
                 $"Scéna: {d.sceneName}\n" +
                 $"Gold: {d.gold}\n" +
-                $"Odemčeno: {string.Join(", ", d.unlockedProducts)}\n" +
-                $"Prodáno položek: {d.itemsRemoved.Count}";
+                $"Odemčeno: {string.Join(", ", d.unlockedProducts)}\n";
             loadButton.interactable = true;
         }
         else
