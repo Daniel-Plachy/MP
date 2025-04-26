@@ -38,3 +38,8 @@ Co jsem nezvládl:
 Co mám rozpracované:
 - upravoval jsem prefaby košů, kde se nachází nové produkty, takže mi tam teď levitují - opravím, co nejrychleji
 - navmesh pro NPC, aby chodily do obchodu.
+
+AKTUALIZACE 26.4.
+Co jsem udělal:
+- prakticky všechno
+- asi je hotovo
