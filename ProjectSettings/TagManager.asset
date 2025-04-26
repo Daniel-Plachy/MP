@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PickUp
   - KosSpawnPoint
+  - Bag
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - NPC
   - Water
   - UI
-  - 
-  - 
+  - NPCTriggerDetector
+  - BuyMenuUI
   - 
   - 
   - 

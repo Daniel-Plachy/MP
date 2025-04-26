@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8342879685578637082}
+  - component: {fileID: 6070682879884982342}
   m_Layer: 0
   m_Name: kos_tomato
   m_TagString: Untagged
@@ -40,9 +41,21 @@ Transform:
   - {fileID: 3512096175747056256}
   - {fileID: 4063879693766568882}
   - {fileID: 6417175501190702439}
-  - {fileID: 2385694500595978546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6070682879884982342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452283808462166645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3129a547f5f8c40b7a464b94b50ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
 --- !u!1001 &873128562081574738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,7 +66,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (5)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115,7 +128,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (9)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,7 +190,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (6)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -239,7 +252,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (1)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,7 +314,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -363,7 +376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (8)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,7 +438,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (4)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -487,7 +500,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (7)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -549,7 +562,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (2)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -601,68 +614,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
   m_PrefabInstance: {fileID: 5843286785005209280}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6521323612465855650
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8342879685578637082}
-    m_Modifications:
-    - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_Name
-      value: tomato (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1643947
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.26139504
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.02312541
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
---- !u!4 &2385694500595978546 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
-  m_PrefabInstance: {fileID: 6521323612465855650}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6880485751487181406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -673,7 +624,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8129003274095621930, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_Name
-      value: tomato (3)
+      value: "Raj\u010De"
       objectReference: {fileID: 0}
     - target: {fileID: 8906947725992701328, guid: 1de58c40938def848b0c8b5557afaeaf, type: 3}
       propertyPath: m_LocalPosition.x

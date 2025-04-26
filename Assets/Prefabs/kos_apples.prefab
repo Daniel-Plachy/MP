@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4167864291498255645}
+  - component: {fileID: 6153651416088428888}
   m_Layer: 0
   m_Name: kos_apples
   m_TagString: Untagged
@@ -39,10 +40,22 @@ Transform:
   - {fileID: 8487413251096253141}
   - {fileID: 6406521884231909478}
   - {fileID: 3782219860955921959}
-  - {fileID: 6783929745273795920}
   - {fileID: 3310034936480163019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6153651416088428888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229164845611250384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3129a547f5f8c40b7a464b94b50ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
 --- !u!1001 &322865146293577449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (4)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -155,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (6)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -217,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -279,7 +292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (3)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -290,68 +303,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
   m_PrefabInstance: {fileID: 3691618393103563675}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4132097425022168936
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4167864291498255645}
-    m_Modifications:
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.1504
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.4107
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1987
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-      propertyPath: m_Name
-      value: apple (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
---- !u!4 &6783929745273795920 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7457244780007823928, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
-  m_PrefabInstance: {fileID: 4132097425022168936}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4208172268187171349
 PrefabInstance:
@@ -403,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (5)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -465,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (7)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -527,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (10)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -589,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (8)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -651,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (1)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -715,7 +666,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5457515081870367791, guid: 0506c26199b5d8f40aa50b7264b85330, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -775,7 +727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797600342064021634, guid: c81eaae90d356eb459abc03ae7213049, type: 3}
       propertyPath: m_Name
-      value: apple (2)
+      value: Jablka
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

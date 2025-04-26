@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3127417507662470724}
+  - component: {fileID: 3995443014733575191}
   m_Layer: 0
   m_Name: kos_potato
   m_TagString: Untagged
@@ -39,10 +40,22 @@ Transform:
   - {fileID: 5109563954487743570}
   - {fileID: 8223329672676266875}
   - {fileID: 8058251886365608737}
-  - {fileID: 2560596862850457966}
   - {fileID: 4035776538160980331}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3995443014733575191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221731889709460001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3129a547f5f8c40b7a464b94b50ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
 --- !u!1001 &339180781467916376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (1)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -104,68 +117,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
   m_PrefabInstance: {fileID: 339180781467916376}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &440341465543034406
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 3127417507662470724}
-    m_Modifications:
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.19132596
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.4267931
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.28403953
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
-      propertyPath: m_Name
-      value: potato (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e51dffb685464164f842f53cda505536, type: 3}
---- !u!4 &2560596862850457966 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2708204330569115464, guid: e51dffb685464164f842f53cda505536, type: 3}
-  m_PrefabInstance: {fileID: 440341465543034406}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895155668108638363
 PrefabInstance:
@@ -217,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (3)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -341,7 +292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (5)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -403,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (10)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -465,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (2)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -527,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -589,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (4)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -651,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (8)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -713,7 +664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (7)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -775,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377323489782365682, guid: e51dffb685464164f842f53cda505536, type: 3}
       propertyPath: m_Name
-      value: potato (6)
+      value: Brambory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

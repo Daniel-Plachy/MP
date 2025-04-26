@@ -2,38 +2,29 @@ using UnityEngine;
 
 public class CashRegister : MonoBehaviour
 {
-    public float scanRange = 2f; 
+    public float scanRange = 2f;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            ScanItem();
-        }
-        
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            AcceptCustomer();
-        }
+        if (Input.GetKeyDown(KeyCode.F)) ScanItem();
+        if (Input.GetKeyDown(KeyCode.G)) AcceptCustomer();
     }
 
     void ScanItem()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, scanRange);
-        foreach (Collider col in colliders)
+        DataManager.scannedProduct = "";
+        DataManager.scannedObject = null;
+        foreach(var col in Physics.OverlapSphere(transform.position, scanRange))
         {
-            if (col.CompareTag("PickUp") && col.transform.parent != null) 
+            if (col.CompareTag("PickUp") && col.transform.parent != null)
             {
-                Debug.Log("Položka naskenována!");
-                return;
+                DataManager.scannedProduct = col.gameObject.name;
+                DataManager.scannedObject  = col.gameObject;
+                SoundManager.instance.PlayScan();
+                break;
             }
         }
-        Debug.Log("Žádné zboží k naskenování!");
     }
-    
-    void AcceptCustomer()
-    {
 
-        Debug.Log("Zákazník přijat, objednávka přijata!");
-    }
+    void AcceptCustomer() { }
 }

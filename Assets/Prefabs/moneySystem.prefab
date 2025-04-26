@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &742603521764391586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4958506897538045863}
+  - component: {fileID: 8948088598233671526}
+  m_Layer: 0
+  m_Name: moneySystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4958506897538045863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742603521764391586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2146752, y: -7.8579473, z: 21.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8948088598233671526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742603521764391586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b6a84196e282942835170fd3fe9a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 0
+  initialBramboryPoint: {fileID: 5184153833631667560, guid: f24ce16eaf736ee4c9cf94a9db6c7efa, type: 3}
+  initialJablkaPoint: {fileID: 8394936369661097882, guid: a8d958702e76c7b448051683ffc0788f, type: 3}
+  spawnPointHrusek: {fileID: 2855492220662544515, guid: b1349768656aed64c917e800b91de7d7, type: 3}
+  spawnPointBanany: {fileID: 6750404928025340092, guid: 27e5c169f665d714f9e634ab0985956f, type: 3}
+  spawnPointMrkve: {fileID: 3619984425536277284, guid: 80b2d8a1b23dbd3419e1981b3cb46d00, type: 3}
+  spawnPointRajcata: {fileID: 3619984425536277284, guid: 80b2d8a1b23dbd3419e1981b3cb46d00, type: 3}
+  kosBramboryPrefab: {fileID: 9221731889709460001, guid: 38531b0c2e1da9b4ea085be718cae90a, type: 3}
+  kosJablkaPrefab: {fileID: 229164845611250384, guid: 8020580a2e160374886252b50958283e, type: 3}
+  kosHrusekPrefab: {fileID: 2677787416105314545, guid: 6b69a922737c4ec4d808e7d16ac96e78, type: 3}
+  kosBananyPrefab: {fileID: 5604370373132606943, guid: 36fac12fef22bf649aec2bed78177edb, type: 3}
+  kosMrkvePrefab: {fileID: 1812572886412370706, guid: 21112c6fcf8ab494e9cd93b695c51b26, type: 3}
+  kosRajcataPrefab: {fileID: 3452283808462166645, guid: c7e59388b45ce6e40acb23b1e59668e9, type: 3}
+  hasBrambory: 0
+  hasJablka: 0
+  hasHrusek: 0
+  hasBanany: 0
+  hasMrkve: 0
+  hasRajcata: 0
